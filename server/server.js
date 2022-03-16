@@ -11,7 +11,7 @@ app.use(express.json());
 //Use either middleware or endpoints NOT BOTH
 app.use(express.static(path.join(__dirname, "../public")))
 
-app.use(express.static(path.join(__dirname, "../images")))
+app.use(express.static("/images", path.join(__dirname, "../images")))
 
 //Endpoints
 //Use this endpoint to host pictures
